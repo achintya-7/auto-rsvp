@@ -31,12 +31,22 @@ def login():
 
     print("Authorized Succesfully!")
 
-    groups = get_json('groups.json')
 
-    for group in groups['groups']:
-        print("Getting events for " + group['name'])
-        get_events(group['name'], group['end_date'])
-        print("\n\n")
+    print(loginResponse.headers['Set-Cookie'])
+    # token = "memberId"
+    
+    # index = text.find(token)
+
+    # while index != -1:
+    #     print(text[index-100:index+100])
+    #     print("\n")
+    #     index = text.find(token, index+len(token))
+
+    # groups = get_json('groups.json')
+
+    #     print("Getting events for " + group['name'])
+    #     get_events(group['name'], group['end_date'])
+    #     print("\n\n")
 
 
 
