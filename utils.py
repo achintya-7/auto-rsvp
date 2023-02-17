@@ -13,3 +13,6 @@ def find_token(html: str) -> str:
 def get_json(file: str) -> dict:
     with open(file,'r') as f:
         return json.loads(f.read())
+
+def get_url(group: str):
+     return 'https://www.meetup.com/' + group + '/'
